@@ -1,0 +1,15 @@
+// function formdate(time){
+//   var data = getDate(time)
+//   return data.getFullYear() + '-' + (data.getMonth()+1)
+// }
+// moudle.exports = {
+//   formdata : formdate
+// }
+
+function formdate(time) {
+  var data = getDate(time)
+  return data.getFullYear() + '-' + (data.getMonth() + 1)
+}
+module.exports = {
+  formdata: formdate
+}

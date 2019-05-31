@@ -1,0 +1,9 @@
+<!--pages/ajaxdom/ajaxdom.wxml-->
+<view>
+  <input type='text' value="{{val}}" bindinput='tosearch' />
+  <block wx:for = "{{searchlist}}">
+    <text>
+      {{item}}
+    </text>
+  </block>
+</view>

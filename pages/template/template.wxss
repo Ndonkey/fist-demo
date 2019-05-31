@@ -1,0 +1,5 @@
+.star{
+  display: inline-block;
+  width: 36rpx;
+  height: 36rpx;
+}

@@ -1,0 +1,16 @@
+<!--pages/event/event.wxml-->
+
+<!-- 轮播图组件 -->
+<swiper>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image mode='widthFix' src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 小程序是单向数据流，修改数据必须通过this.setData -->
+<view>
+  <text wx:if="{{flag}}">通过点击事件实现显示隐藏</text>
+  <button bindtap="showflag">点击显示或隐藏flag</button>
+</view>

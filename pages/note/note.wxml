@@ -1,0 +1,8 @@
+<view class=''>
+    <block wx:for="{{notelist}}">
+        <text>{{item.title}}\n</text>
+        <text>{{item.content}}</text>
+    </block>
+    <button bindtap='toAdd'>添加</button>
+    <button>清楚</button>
+</view>

@@ -1,0 +1,43 @@
+<!--pages/list/list.wxml-->
+<!-- 列表渲染 -->
+<!-- <view> 盒子容器 -->
+<!-- wx:key 静态遍历不需要 -->
+<view wx:for="{{list}}" wx:key="*this">
+  {{item}}
+  <!-- 针对循环自动赋值叫做item  可以通过wx:for-item="a"改变item -->
+</view>
+
+<!-- 显示隐藏 -->
+<!-- <text> 文本容器 -->
+<text>
+  {{msg}}
+</text>
+
+<text wx:if="{{flag}}">
+  显示内容{{msg}}
+</text>
+
+<text hidden='{{flag}}'>
+  显示 hiden{{msg}}的内容v-show
+</text>
+
+<text>
+<!-- 支持三元表达式 -->
+  {{flag?'显示内容true':'显示false'}}
+</text>
+
+<view>
+  <button bindtap = "tomusic">去音乐页面</button>
+</view>
+
+<!-- wxs -->
+<wxs src = "../../utils/tool.wxs" module = "tools"/>
+<view>
+  {{tools.formdata(1559090391822)}}
+</view>
+
+
+<wxs src = "../../utils/tool.wxs" module = "tools"/>
+<view>
+  {{tools.formdata(1559090391822)}}
+</view>

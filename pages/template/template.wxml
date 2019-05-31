@@ -1,0 +1,16 @@
+<!--pages/template/template.wxml-->
+<template name="list-item">
+  <text>
+    {{singleData.title}}
+  </text>
+  <text>
+    {{singleData.content}}
+  </text>
+  <text>
+    {{singleData.roating}}
+  </text>
+  <block wx:for="{{singleData.roating}}">
+    <image wx:if="{{item==1}}" class='star' src='../../images/star1.png'></image>
+    <image wx:else class='star' src='../../images/star2.png'></image>
+  </block>
+</template>

@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/note/note",
+    "pages/add/add",
+    "pages/index/index",
+    "pages/artlist/artlist",
+    "pages/detail/detail",
+    
+    "pages/animate/animate",
+    "pages/backuautio/backuautio",
+    "pages/ajaxdom/ajaxdom",
+    "pages/event/event",
+    "pages/logs/logs",
+    "pages/list/list"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTitleText": "列表",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "black",
+    "selectedColor": "blue",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icons/about.png",
+        "selectedIconPath": "images/icons/about-selected.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "列表",
+        "iconPath": "images/icons/weekly.png",
+        "selectedIconPath": "images/icons/weekly-selected.png"
+      },
+      {
+        "pagePath": "pages/backuautio/backuautio",
+        "text": "音乐",
+        "iconPath": "images/star2.png",
+        "selectedIconPath": "images/star1.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+<!--pages/animate/animate.wxml-->
+<view class='anmitabox' animation="{{anmitaData}}">
+
+</view>

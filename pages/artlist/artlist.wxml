@@ -1,0 +1,20 @@
+<!--pages/artlist/artlist.wxml-->
+<view>
+  <block wx:for="{{ artData }}">
+    <view bindtap="todetail" data-id="{{item.id}}">
+      <text>
+        {{ item.title }}
+      </text>
+      <text>
+        {{ item.roating }}
+      </text>
+      <text>
+        {{ item.content }}
+      </text>
+      <block wx:for="{{item.roating}}">
+        <image wx:if="{{item==1}}" class='star' src='../../images/star1.png'></image>
+        <image wx:else class='star' src='../../images/star2.png'></image>
+      </block>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,5 @@
+// var tool = require('./tool.wxs')
+// tool.formdate()
+
+var tool = require('./tool.wxs')
+tool.formdate()

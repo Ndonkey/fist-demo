@@ -1,0 +1,7 @@
+<!--pages/detail/detail.wxml-->
+<!-- 通过import引入模版 -->
+<import src="../template/template.wxml" />
+<view>
+  <!-- is对应的是你定义的模版的name -->
+  <template is="list-item" data="{{singleData}}"></template>
+</view>
